@@ -1,0 +1,24 @@
+<div id="part-1">
+  <h1>Part 1</h1>
+  <label for="projectsList"> Select project: </label>
+  <select name="projectsList" ng-model="data.selected">
+    <option ng-repeat="project in data.projects" ng-value="{{ project.id }}">
+      {{ project.name }}
+    </option>
+  </select>
+  <input type="date" ng-model="data.date" />
+  <div ng-if="data.selected && data.date">
+    <p>
+      selected project id = {{ data.selected }} selected date = {{ data.date }}
+    </p>
+    <button ng-click="getWorks()">Get Works</button>
+  </div>
+  <div>
+    <ul>
+      <li ng-repeat="work in result">
+        start time: {{ work.startTime }} end time:
+        {{ work.endTime }} description: {{ work.description }}
+      </li>
+    </ul>
+  </div>
+</div>

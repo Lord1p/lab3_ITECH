@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<hrml ng-app="lab3">
+  <head>
+    <title>
+      Laba 3
+    </title>
+    <link rel="stylesheet" href="./app/main.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#!part-1">Part 1</a>
+      <a href="#!part-2">Part 2</a>
+      <a href="#!part-3">Part 3</a>
+    </nav>
+    <ng-view></ng-view>
+  </body>
+  <script src="./app/lib/angular.min.js"></script>
+  <script src="./app/lib/angular-route.min.js"></script>
+  <script src="./app/src/app.module.js"></script>
+  <script src="./app/src/controllers/part-1.controller.js"></script>
+  <script src="./app/src/controllers/part-2.controller.js"></script>
+  <script src="./app/src/controllers/part-3.controller.js"></script>
+  
+</hrml>

@@ -1,0 +1,33 @@
+div input button select {
+    margin: 1em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+#part-1 {
+    border: 1px solid #bd4444;
+    margin: 2em;
+    padding: 1em;
+    background-color: #c98a8a;
+}
+
+#part-2 {
+    border: 1px solid #52bd44;
+    margin: 2em;
+    padding: 1em;
+    background-color: #79b471;
+}
+
+#part-3 {
+    border: 1px solid #447cbd;
+    margin: 2em;
+    padding: 1em;
+    background-color: #6c96c5;
+}

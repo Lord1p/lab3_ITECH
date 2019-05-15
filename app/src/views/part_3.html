@@ -1,0 +1,19 @@
+<div id="part-3">
+        <h1>Part 3</h1>
+        <label for="projectsList"> Select Manager: </label>
+        <select name="projectsList" ng-model="data.selected">
+          <option ng-repeat="manager in data.managers" ng-value="{{ manager.id }}">
+            {{ manager.name }}
+          </option>
+        </select>
+        <div ng-if="data.selected">
+          <p>
+            selected manager id = {{ data.selected }}
+          </p>
+          <button ng-click="getCount()">Get Works</button>
+        </div>
+        <div ng-if="result">
+          <p>{{ result }}</p>
+        </div>
+      </div>
+      
